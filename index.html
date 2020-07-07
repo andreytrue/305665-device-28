@@ -1,54 +1,75 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  	<header>
-  		<div>
-  			<!-- Логотип -->
-  			<a href="">
-  				<img src=""> 
-  			</a>
-  			<form>
-  				<label for="index-search"></label>
-  				<input type="input" name="" id="index-search">
-  			</form>
-  			<a href="">Войти</a>
-  			<a href="">Сравнить</a>
-  			<a href="">Корзина</a>
-  		</div>
-  		<div>
-  		<a href="">Каталог товаров</a>
-  	
-  		<a href="">Доставка</a>
-  		<a href="">Гарантия</a>
-  		<a href="">Контакты</a>
-  		</div>
-  		<nav>
-  			<ul>
-  				<li>
-  					<a href="">Виртуальная реальность</a>
-  				</li>
-  				<li>
-  					<a href="">Моноподы для селфи</a>
-  				</li>
-  				<li>
-  					<a href="">Экшн-камеры</a>
-  				</li>
-  				<li>
-  					<a href="">Фитнес-браслеты</a>
-  				</li>
-  				<li>
-  					<a href="">Умные часы</a>
-  				</li>
-  				<li>
-  					<a href="">Квадрокоптер</a>
-  				</li>
-  			</ul>
-  		</nav>
-  	</header>
+  <body class="page-body">
+
+	<header class="main-header">
+		<!-- Логотип -->
+		<a class="main-header-logo" href="">
+			<img src="img/logo.png"> 
+		</a>
+
+		<div class="main-header-user-interface">
+			<form class="main-header-search">
+				<svg class="main-header-search-icon" width="16" height="16" viewBox="0 0 16 16">
+					<path d="M6.66671 12C7.85003 11.9998 8.99924 11.6036 9.93137 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6034 8.99977 11.9998 7.85029 12 6.66666C12 3.726 9.60737 1.33333 6.66671 1.33333C3.72604 1.33333 1.33337 3.726 1.33337 6.66666C1.33337 9.60733 3.72604 12 6.66671 12ZM6.66671 2.66666C8.87271 2.66666 10.6667 4.46066 10.6667 6.66666C10.6667 8.87266 8.87271 10.6667 6.66671 10.6667C4.46071 10.6667 2.66671 8.87266 2.66671 6.66666C2.66671 4.46066 4.46071 2.66666 6.66671 2.66666Z" fill="black"/>
+				</svg>
+				<label class="main-header-search-label" for="index-search">Поиск по сайту</label>
+				<input class="visually-hidden" type="input" name="search" id="index-search">
+			</form>
+
+			<a class="main-header-login" href="">Войти</a>
+
+			<a href="">Сравнить</a>
+
+			<a class="main-header-basket" href="">Корзина</a>
+		</div>
+
+		<div class="main-header-menu">
+			<div class="main-header-items-list-wrapper">
+				<a class="main-header-items-list" href="">Каталог товаров</a>
+				<svg class="main-header-items-list-icon" width="22" height="22" viewBox="0 0 22 22">
+					<path d="M18.7 9.89999V12.1H12.1V18.7H9.9V12.1H3.3V9.89999H9.9V3.29999H12.1V9.89999H18.7Z" fill="black" fill-opacity="0.3"/>
+				</svg>
+			</div>
+
+			<div class="main-header-menu-links-wrapper">
+				<a class="main-header-menu-delivery" href="">Доставка</a>
+				<a class="main-header-menu-warranty" href="">Гарантия</a>
+				<a class="main-header-menu-contacts" href="">Контакты</a>
+			</div>
+		</div>
+
+		<nav class="main-header-navigation visually-hidden">
+			<ul>
+				<li>
+					<a href="">Виртуальная реальность</a>
+				</li>
+				<li>
+					<a href="">Моноподы для селфи</a>
+				</li>
+				<li>
+					<a href="">Экшн-камеры</a>
+				</li>
+				<li>
+					<a href="">Фитнес-браслеты</a>
+				</li>
+				<li>
+					<a href="">Умные часы</a>
+				</li>
+				<li>
+					<a href="">Квадрокоптер</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
   	<main>
   		<!-- Слайдер с главными товарами -->
   		<section>
